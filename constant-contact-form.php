@@ -5,9 +5,11 @@ Plugin Name: constant contact form
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/constant-contact/
 Description: This constant contact form plugin add the entered email address into site admin constantcontact.com account with mentioned group. and this will send thank you mail to the entered email address.
 Author: Gopi.R
-Version: 4.0
+Version: 5.0
 Author URI: http://www.gopiplus.com/work/2010/07/18/constant-contact/
 Donate link: http://www.gopiplus.com/work/2010/07/18/constant-contact/
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 global $wpdb, $wp_version;
@@ -81,42 +83,43 @@ function ccf_deactivate()
 
 }
 
-add_filter('the_content','ccf_constant_contact_form');
+add_shortcode( 'constant-contact-form', 'ccf_constant_contact_form_shortcode' );
 
-function ccf_constant_contact_form($content)
+function ccf_constant_contact_form_shortcode( $atts ) 
 {
-	return 	preg_replace_callback('/\[constant-contact-form=(.*?)\]/sim','ccf_constant_contact_form_callback',$content);
-}
-
-function ccf_constant_contact_form_callback($matches) 
-{
-$ccf = "";
-$links = "'".get_option('siteurl').'/wp-content/plugins/constant-contact-form/class/'."'";
-//echo $links;
-$ccf_with_in_textbox = "'".get_option('ccf_with_in_textbox')."'";
-$ccf_button = get_option('ccf_button');
-$ccf_space = "''";
-
-$ccf = $ccf . '<div>';
-$ccf = $ccf . '<div class="ccf_caption">';
-$ccf = $ccf . get_option('ccf_caption');
-$ccf = $ccf . '</div>';
-$ccf = $ccf . '<div class="ccf_msg">';
-$ccf = $ccf . '<span id="ccf_msg"></span>';
-$ccf = $ccf . '</div>';
-$ccf = $ccf . '<div class="ccf_textbox">';
-$ccf = $ccf . '<input class="ccf_textbox_class" name="ccf_txt_email" id="ccf_txt_email" ';
-$ccf = $ccf . 'onkeypress="if(event.keyCode==13) ccf_submit_ajax('.$links.')" ';
-$ccf = $ccf . 'onblur="if(this.value=='.$ccf_space.') this.value='.$ccf_with_in_textbox.';" ';
-$ccf = $ccf . 'onfocus="if(this.value=='.$ccf_with_in_textbox.') this.value='.$ccf_space.';" ';
-$ccf = $ccf . 'value='.$ccf_with_in_textbox.' maxlength="150" type="text">';
-$ccf = $ccf . '</div>';
-$ccf = $ccf . '<div class="ccf_button">';
-$ccf = $ccf . '<input class="ccf_textbox_button" type="button" name="ccf_txt_Button" onClick="return ccf_submit_ajax('.$links.')" id="ccf_txt_Button" value="'.$ccf_button.'">';
-$ccf = $ccf . '</div>';
-$ccf = $ccf . '</div>';
-return $ccf;
-
+	$ccf = "";
+	//[constant-contact-form load="1"]
+	if ( ! is_array( $atts ) )
+	{
+		return '';
+	}
+	$load = $atts['load'];
+	
+	$links = "'".get_option('siteurl').'/wp-content/plugins/constant-contact-form/class/'."'";
+	//echo $links;
+	$ccf_with_in_textbox = "'".get_option('ccf_with_in_textbox')."'";
+	$ccf_button = get_option('ccf_button');
+	$ccf_space = "''";
+	
+	$ccf = $ccf . '<div>';
+	$ccf = $ccf . '<div class="ccf_caption">';
+	$ccf = $ccf . get_option('ccf_caption');
+	$ccf = $ccf . '</div>';
+	$ccf = $ccf . '<div class="ccf_msg">';
+	$ccf = $ccf . '<span id="ccf_msg"></span>';
+	$ccf = $ccf . '</div>';
+	$ccf = $ccf . '<div class="ccf_textbox">';
+	$ccf = $ccf . '<input class="ccf_textbox_class" name="ccf_txt_email" id="ccf_txt_email" ';
+	$ccf = $ccf . 'onkeypress="if(event.keyCode==13) ccf_submit_ajax('.$links.')" ';
+	$ccf = $ccf . 'onblur="if(this.value=='.$ccf_space.') this.value='.$ccf_with_in_textbox.';" ';
+	$ccf = $ccf . 'onfocus="if(this.value=='.$ccf_with_in_textbox.') this.value='.$ccf_space.';" ';
+	$ccf = $ccf . 'value='.$ccf_with_in_textbox.' maxlength="150" type="text">';
+	$ccf = $ccf . '</div>';
+	$ccf = $ccf . '<div class="ccf_button">';
+	$ccf = $ccf . '<input class="ccf_textbox_button" type="button" name="ccf_txt_Button" onClick="return ccf_submit_ajax('.$links.')" id="ccf_txt_Button" value="'.$ccf_button.'">';
+	$ccf = $ccf . '</div>';
+	$ccf = $ccf . '</div>';
+	return $ccf;
 }
 
 function ccf_add_to_menu() 
