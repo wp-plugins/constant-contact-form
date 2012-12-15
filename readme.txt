@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2010/07/18/constant-contact/
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/constant-contact/
 Tags: constant, contact, widget, email
 Requires at least: 3.0
-Tested up to: 3.4.2
-Stable tag: 5.0
+Tested up to: 3.5
+Stable tag: 5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -59,7 +59,9 @@ This Constant Contact wordpress plug-in adds a constant contact widget signup fo
 
 == Screenshots ==
 
-[Screenshots](http://www.gopiplus.com/work/2010/07/18/constant-contact/)	
+1. Front End :  http://www.gopiplus.com/work/2010/07/18/constant-contact/	
+
+2. Admin :  http://www.gopiplus.com/work/2010/07/18/constant-contact/
 
 == Changelog ==
 
@@ -89,6 +91,10 @@ Tested up to 3.4.2
 
 Slight change in the short code, Please find the new short code for your form
 
+= 5.1 =
+
+Tested up to 3.5
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -116,3 +122,7 @@ New demo link, www.gopiplus.com
 Tested up to 3.4.2
 
 Slight change in the short code, Please find the new short code for your form
+
+= 5.1 =
+
+Tested up to 3.5
