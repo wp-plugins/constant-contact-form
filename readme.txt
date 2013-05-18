@@ -4,9 +4,9 @@ Donate link: http://www.gopiplus.com/work/2010/07/18/constant-contact/
 Author URI: http://www.gopiplus.com/work/2010/07/18/constant-contact/
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/constant-contact/
 Tags: constant, contact, widget, email
-Requires at least: 3.0
-Tested up to: 3.5
-Stable tag: 5.1
+Requires at least: 3.4
+Tested up to: 3.6
+Stable tag: 6.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -21,7 +21,17 @@ Check official website for live demo [http://www.gopiplus.com/work/2010/07/18/co
 *   [Comments/Suggestion](http://www.gopiplus.com/work/2010/07/18/constant-contact/)		
 *   [About author](http://www.gopiplus.com/work/)			
 
-This Constant Contact wordpress plug-in adds a constant contact widget signup form to your website sidebar. Very easy and no need any coding language knowledge to use this plug-in. Once the widget is ready, entered emails are automatically stored into your constant contact account.
+This Constant Contact wordpress plug-in adds a constant contact widget signup form to your website sidebar. 
+
+Very easy and no need any coding language knowledge to use this plug-in. Once the widget is ready, entered emails are automatically stored into your constant contact account.
+
+This WordPress plugin is to integrate constant contact account to your wordpress website.
+
+Add Constant Contact widget email subscribe form to your sidebar with Custom title, Custom text box caption, Custom button style, Custom text box style.
+
+User entered emails are automatically stored in to site admin constant contact account (admin need to provide their own constant contact login details at widget management)
+
+No page refresh, because this widget using Ajax.
 
 **Features of this plugin**
 
@@ -95,6 +105,10 @@ Slight change in the short code, Please find the new short code for your form
 
 Tested up to 3.5
 
+= 6.0 =
+
+Tested up to 3.6
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -126,3 +140,7 @@ Slight change in the short code, Please find the new short code for your form
 = 5.1 =
 
 Tested up to 3.5
+
+= 6.0 =
+
+Tested up to 3.6
