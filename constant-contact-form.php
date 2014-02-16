@@ -1,11 +1,10 @@
 <?php
-
 /*
 Plugin Name: constant contact form
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/constant-contact/
 Description: This constant contact form plugin add the entered email address into site admin constantcontact.com account with mentioned group. and this will send thank you mail to the entered email address.
 Author: Gopi.R
-Version: 6.0
+Version: 6.1
 Author URI: http://www.gopiplus.com/work/2010/07/18/constant-contact/
 Donate link: http://www.gopiplus.com/work/2010/07/18/constant-contact/
 License: GPLv2 or later
@@ -27,8 +26,8 @@ function ccf_activation()
 	add_option('ccf_group', "General Interest");
 	add_option('ccf_title', "Newsletter");
 	add_option('ccf_caption', "Sign up for Hints & Tips e-Newsletter");
-	add_option('ccf_adminemail', "admin@gopiplus.com");
-	add_option('ccf_fromemail', "noreply@gopiplus.com");
+	add_option('ccf_adminemail', "admin@youremail.com");
+	add_option('ccf_fromemail', "noreply@youremail.com");
 	add_option('ccf_with_in_textbox', "Email:");
 	add_option('ccf_button', "Submit");
 	add_option('ccf_adminmail', "YES");
@@ -52,27 +51,30 @@ function ccf_widget($args)
 
 function ccf_control() 
 {
-	echo '<p>Constant contact form.<br><br> To change the setting goto Constant Contact Form link on setting menu.<br>';
-	echo ' <a href="options-general.php?page=constant-contact-form/constant-contact-form.php">';
-	echo 'click here</a></p>';
-	echo 'Check official website for live demo <a target="_blank" href="http://www.gopiplus.com/work/2010/07/18/constant-contact/">click here</a>';
+	echo '<p><b>';
+	_e('Constant contact form', 'constant-contact');
+	echo '.</b> ';
+	_e('Check official website for more information', 'constant-contact');
+	?> <a target="_blank" href="http://www.gopiplus.com/work/2010/07/18/constant-contact/"><?php _e('click here', 'constant-contact'); ?></a></p><?php
 }
 
 function ccf_admin_options()
 {
-	include_once("help.php");
+	include_once("setting.php");
 }
 
 function ccf_plugins_loaded()
 {
 	if(function_exists('wp_register_sidebar_widget')) 
 	{
-		wp_register_sidebar_widget('constant contact form', 'constant contact form', 'ccf_widget');
+		wp_register_sidebar_widget( __('Constant contact form', 'constant-contact'), 
+					__('Constant contact form', 'constant-contact'), 'ccf_widget');
 	}
 	
 	if(function_exists('wp_register_widget_control')) 
 	{
-		wp_register_widget_control('constant contact form', array('constant contact form', 'widgets'), 'ccf_control');
+		wp_register_widget_control( __('Constant contact form', 'constant-contact'), 
+					array( __('Constant contact form', 'constant-contact'), 'widgets'), 'ccf_control');
 	} 
 }
 
@@ -122,8 +124,10 @@ function ccf_constant_contact_form_shortcode( $atts )
 
 function ccf_add_to_menu() 
 {
-	add_options_page('Constant contact form', 'Constant contact form', 'manage_options', __FILE__, 'ccf_admin_options' );
-	add_options_page('Constant contact form', '', 'manage_options', "constant-contact-form/setting.php",'' );
+	//add_options_page('Constant contact form', 'Constant contact form', 'manage_options', __FILE__, 'ccf_admin_options' );
+	//add_options_page('Constant contact form', '', 'manage_options', "constant-contact-form/setting.php",'' );
+	add_options_page( __('Constant contact form', 'constant-contact'), 
+			__('Constant contact form', 'constant-contact'), 'manage_options', 'constant-contact-form', 'ccf_admin_options' );
 }
 
 if (is_admin()) 
@@ -139,7 +143,13 @@ function ccf_add_javascript_files()
 		wp_enqueue_style( 'ccf_custom', get_option('siteurl').'/wp-content/plugins/constant-contact-form/class/ccf_custom.css','','','screen');
 	}
 }    
- 
+
+function ccf_textdomain() 
+{
+	  load_plugin_textdomain( 'constant-contact', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+}
+
+add_action('plugins_loaded', 'ccf_textdomain');
 add_action('init', 'ccf_add_javascript_files');
 register_activation_hook(__FILE__, 'ccf_activation');
 add_action("plugins_loaded", "ccf_plugins_loaded");

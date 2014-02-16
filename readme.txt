@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2010/07/18/constant-contact/
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/constant-contact/
 Tags: constant, contact, widget, email
 Requires at least: 3.4
-Tested up to: 3.6
-Stable tag: 6.0
+Tested up to: 3.8
+Stable tag: 6.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -69,9 +69,9 @@ No page refresh, because this widget using Ajax.
 
 == Screenshots ==
 
-1. Front End :  http://www.gopiplus.com/work/2010/07/18/constant-contact/	
+1. Front Screen :  http://www.gopiplus.com/work/2010/07/18/constant-contact/	
 
-2. Admin :  http://www.gopiplus.com/work/2010/07/18/constant-contact/
+2. Admin Screen :  http://www.gopiplus.com/work/2010/07/18/constant-contact/
 
 == Changelog ==
 
@@ -109,6 +109,12 @@ Tested up to 3.5
 
 Tested up to 3.6
 
+= 6.1 =
+
+1. Tested up to 3.8
+2. Now this plugin supports localization (or internationalization). i.e. option to translate into other languages. 
+Plugin *.po file (constant-contact.po) available in the languages folder.
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -144,3 +150,9 @@ Tested up to 3.5
 = 6.0 =
 
 Tested up to 3.6
+
+= 6.1 =
+
+1. Tested up to 3.8
+2. Now this plugin supports localization (or internationalization). i.e. option to translate into other languages. 
+Plugin *.po file (constant-contact.po) available in the languages folder.

@@ -1,0 +1,193 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: constant contact form\n"
+"POT-Creation-Date: 2014-02-15 21:45+0800\n"
+"PO-Revision-Date: 2014-02-15 21:45+0800\n"
+"Last-Translator: \n"
+"Language-Team: www.gopiplus.com <www.gopiplus.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../constant-contact-form.php:55 ../constant-contact-form.php:70
+#: ../constant-contact-form.php:71 ../constant-contact-form.php:76
+#: ../constant-contact-form.php:77 ../constant-contact-form.php:129
+#: ../constant-contact-form.php:130 ../setting.php:4
+msgid "Constant contact form"
+msgstr ""
+
+#: ../constant-contact-form.php:57
+msgid "Check official website for more information"
+msgstr ""
+
+#: ../constant-contact-form.php:58 ../setting.php:11 ../setting.php:160
+msgid "click here"
+msgstr ""
+
+#: ../setting.php:6
+msgid ""
+"Constant Contact is an online email marketing service that allows businesses "
+"to stay connected to their customers via email, surveys and event marketing."
+msgstr ""
+
+#: ../setting.php:7
+msgid ""
+"This service can send thousands of emails at one time and maintain status "
+"reports. Learn more about Constant Contact : http://www.constantcontact.com/"
+msgstr ""
+
+#: ../setting.php:10 ../setting.php:159
+msgid "Check official website for more information and live demo"
+msgstr ""
+
+#: ../setting.php:67
+msgid "Details successfully updated."
+msgstr ""
+
+#: ../setting.php:75
+msgid "Constant Contact Login"
+msgstr ""
+
+#: ../setting.php:77
+msgid "Constant contact username"
+msgstr ""
+
+#: ../setting.php:79
+msgid "Please enter your constant contact username"
+msgstr ""
+
+#: ../setting.php:81
+msgid "Constant contact password"
+msgstr ""
+
+#: ../setting.php:83
+msgid "Please enter your constant contact password"
+msgstr ""
+
+#: ../setting.php:85
+msgid "Constant contact group"
+msgstr ""
+
+#: ../setting.php:87
+msgid "Please enter your constant contact group"
+msgstr ""
+
+#: ../setting.php:89
+msgid "Widget Setting"
+msgstr ""
+
+#: ../setting.php:91
+msgid "Widget title"
+msgstr ""
+
+#: ../setting.php:93
+msgid "Please enter your widget title"
+msgstr ""
+
+#: ../setting.php:95
+msgid "Word within text box"
+msgstr ""
+
+#: ../setting.php:97
+msgid "Please enter text within text box"
+msgstr ""
+
+#: ../setting.php:99
+msgid "Button caption"
+msgstr ""
+
+#: ../setting.php:101
+msgid "Please enter your button caption"
+msgstr ""
+
+#: ../setting.php:103
+msgid "Short description"
+msgstr ""
+
+#: ../setting.php:105
+msgid "Please enter your widget short description"
+msgstr ""
+
+#: ../setting.php:107
+msgid "Email address Setting"
+msgstr ""
+
+#: ../setting.php:109
+msgid "From email address"
+msgstr ""
+
+#: ../setting.php:111
+msgid "Please enter mail from email address"
+msgstr ""
+
+#: ../setting.php:113
+msgid "Admin email address"
+msgstr ""
+
+#: ../setting.php:115
+msgid "Please enter admin email address"
+msgstr ""
+
+#: ../setting.php:118
+msgid "Admin email notification"
+msgstr ""
+
+#: ../setting.php:120
+msgid "Send mail to admin"
+msgstr ""
+
+#: ../setting.php:125
+msgid "Select your option to receive admin mail"
+msgstr ""
+
+#: ../setting.php:127
+msgid "Admin mail subject"
+msgstr ""
+
+#: ../setting.php:129
+msgid "Please enter admin mail subject"
+msgstr ""
+
+#: ../setting.php:131
+msgid "Admin mail content"
+msgstr ""
+
+#: ../setting.php:133
+msgid "Please enter admin mail content"
+msgstr ""
+
+#: ../setting.php:135
+msgid "User email notification"
+msgstr ""
+
+#: ../setting.php:137
+msgid "Send mail to users"
+msgstr ""
+
+#: ../setting.php:142
+msgid "Select your option to send user mail"
+msgstr ""
+
+#: ../setting.php:144
+msgid "Users mail subject"
+msgstr ""
+
+#: ../setting.php:146
+msgid "Please enter user mail subject"
+msgstr ""
+
+#: ../setting.php:148
+msgid "Users mail content"
+msgstr ""
+
+#: ../setting.php:150
+msgid "Please enter users mail content"
+msgstr ""
+
+#: ../setting.php:153
+msgid "Update Setting"
+msgstr ""
