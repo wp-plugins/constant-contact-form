@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: constant contact form\n"
-"POT-Creation-Date: 2014-02-15 21:45+0800\n"
-"PO-Revision-Date: 2014-02-15 21:45+0800\n"
+"POT-Creation-Date: 2014-04-21 22:39+0800\n"
+"PO-Revision-Date: 2014-04-21 22:39+0800\n"
 "Last-Translator: \n"
 "Language-Team: www.gopiplus.com <www.gopiplus.com>\n"
 "MIME-Version: 1.0\n"
@@ -15,8 +15,8 @@ msgstr ""
 
 #: ../constant-contact-form.php:55 ../constant-contact-form.php:70
 #: ../constant-contact-form.php:71 ../constant-contact-form.php:76
-#: ../constant-contact-form.php:77 ../constant-contact-form.php:129
-#: ../constant-contact-form.php:130 ../setting.php:4
+#: ../constant-contact-form.php:77 ../constant-contact-form.php:127
+#: ../constant-contact-form.php:128 ../setting.php:4
 msgid "Constant contact form"
 msgstr ""
 

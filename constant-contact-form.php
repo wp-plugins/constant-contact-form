@@ -3,8 +3,8 @@
 Plugin Name: constant contact form
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/constant-contact/
 Description: This constant contact form plugin add the entered email address into site admin constantcontact.com account with mentioned group. and this will send thank you mail to the entered email address.
-Author: Gopi.R
-Version: 6.1
+Author: Gopi Ramasamy
+Version: 6.2
 Author URI: http://www.gopiplus.com/work/2010/07/18/constant-contact/
 Donate link: http://www.gopiplus.com/work/2010/07/18/constant-contact/
 License: GPLv2 or later
@@ -124,8 +124,6 @@ function ccf_constant_contact_form_shortcode( $atts )
 
 function ccf_add_to_menu() 
 {
-	//add_options_page('Constant contact form', 'Constant contact form', 'manage_options', __FILE__, 'ccf_admin_options' );
-	//add_options_page('Constant contact form', '', 'manage_options', "constant-contact-form/setting.php",'' );
 	add_options_page( __('Constant contact form', 'constant-contact'), 
 			__('Constant contact form', 'constant-contact'), 'manage_options', 'constant-contact-form', 'ccf_admin_options' );
 }
