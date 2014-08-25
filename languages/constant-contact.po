@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: constant contact form\n"
-"POT-Creation-Date: 2014-04-21 22:39+0800\n"
-"PO-Revision-Date: 2014-04-21 22:39+0800\n"
+"POT-Creation-Date: 2014-08-13 22:40+0800\n"
+"PO-Revision-Date: 2014-08-13 22:40+0800\n"
 "Last-Translator: \n"
 "Language-Team: www.gopiplus.com <www.gopiplus.com>\n"
 "MIME-Version: 1.0\n"
@@ -13,181 +13,196 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../constant-contact-form.php:55 ../constant-contact-form.php:70
-#: ../constant-contact-form.php:71 ../constant-contact-form.php:76
-#: ../constant-contact-form.php:77 ../constant-contact-form.php:127
-#: ../constant-contact-form.php:128 ../setting.php:4
+#: ../constant-contact-form.php:73 ../constant-contact-form.php:85
+#: ../constant-contact-form.php:259 ../constant-contact-form.php:260
+#: ../constant-contact-form.php:265 ../constant-contact-form.php:266
+#: ../constant-contact-form.php:317 ../constant-contact-form.php:318
 msgid "Constant contact form"
 msgstr ""
 
-#: ../constant-contact-form.php:57
+#: ../constant-contact-form.php:75
 msgid "Check official website for more information"
 msgstr ""
 
-#: ../constant-contact-form.php:58 ../setting.php:11 ../setting.php:160
+#: ../constant-contact-form.php:76 ../constant-contact-form.php:92
+#: ../constant-contact-form.php:249
 msgid "click here"
 msgstr ""
 
-#: ../setting.php:6
+#: ../constant-contact-form.php:87
 msgid ""
 "Constant Contact is an online email marketing service that allows businesses "
 "to stay connected to their customers via email, surveys and event marketing."
 msgstr ""
 
-#: ../setting.php:7
+#: ../constant-contact-form.php:88
 msgid ""
 "This service can send thousands of emails at one time and maintain status "
 "reports. Learn more about Constant Contact : http://www.constantcontact.com/"
 msgstr ""
 
-#: ../setting.php:10 ../setting.php:159
+#: ../constant-contact-form.php:91 ../constant-contact-form.php:248
 msgid "Check official website for more information and live demo"
 msgstr ""
 
-#: ../setting.php:67
+#: ../constant-contact-form.php:151
 msgid "Details successfully updated."
 msgstr ""
 
-#: ../setting.php:75
+#: ../constant-contact-form.php:159
 msgid "Constant Contact Login"
 msgstr ""
 
-#: ../setting.php:77
+#: ../constant-contact-form.php:161
 msgid "Constant contact username"
 msgstr ""
 
-#: ../setting.php:79
+#: ../constant-contact-form.php:163
 msgid "Please enter your constant contact username"
 msgstr ""
 
-#: ../setting.php:81
+#: ../constant-contact-form.php:165
 msgid "Constant contact password"
 msgstr ""
 
-#: ../setting.php:83
+#: ../constant-contact-form.php:167
 msgid "Please enter your constant contact password"
 msgstr ""
 
-#: ../setting.php:85
+#: ../constant-contact-form.php:169
 msgid "Constant contact group"
 msgstr ""
 
-#: ../setting.php:87
+#: ../constant-contact-form.php:171
 msgid "Please enter your constant contact group"
 msgstr ""
 
-#: ../setting.php:89
+#: ../constant-contact-form.php:173
 msgid "Widget Setting"
 msgstr ""
 
-#: ../setting.php:91
+#: ../constant-contact-form.php:175
 msgid "Widget title"
 msgstr ""
 
-#: ../setting.php:93
+#: ../constant-contact-form.php:177
 msgid "Please enter your widget title"
 msgstr ""
 
-#: ../setting.php:95
+#: ../constant-contact-form.php:179
 msgid "Word within text box"
 msgstr ""
 
-#: ../setting.php:97
+#: ../constant-contact-form.php:181
 msgid "Please enter text within text box"
 msgstr ""
 
-#: ../setting.php:99
+#: ../constant-contact-form.php:183
 msgid "Button caption"
 msgstr ""
 
-#: ../setting.php:101
+#: ../constant-contact-form.php:185
 msgid "Please enter your button caption"
 msgstr ""
 
-#: ../setting.php:103
+#: ../constant-contact-form.php:187
 msgid "Short description"
 msgstr ""
 
-#: ../setting.php:105
+#: ../constant-contact-form.php:189
 msgid "Please enter your widget short description"
 msgstr ""
 
-#: ../setting.php:107
+#: ../constant-contact-form.php:191
 msgid "Email address Setting"
 msgstr ""
 
-#: ../setting.php:109
+#: ../constant-contact-form.php:193
 msgid "From email address"
 msgstr ""
 
-#: ../setting.php:111
+#: ../constant-contact-form.php:195
 msgid "Please enter mail from email address"
 msgstr ""
 
-#: ../setting.php:113
+#: ../constant-contact-form.php:197
 msgid "Admin email address"
 msgstr ""
 
-#: ../setting.php:115
+#: ../constant-contact-form.php:199
 msgid "Please enter admin email address"
 msgstr ""
 
-#: ../setting.php:118
+#: ../constant-contact-form.php:202
 msgid "Admin email notification"
 msgstr ""
 
-#: ../setting.php:120
+#: ../constant-contact-form.php:204
 msgid "Send mail to admin"
 msgstr ""
 
-#: ../setting.php:125
+#: ../constant-contact-form.php:209
 msgid "Select your option to receive admin mail"
 msgstr ""
 
-#: ../setting.php:127
+#: ../constant-contact-form.php:211
 msgid "Admin mail subject"
 msgstr ""
 
-#: ../setting.php:129
+#: ../constant-contact-form.php:213
 msgid "Please enter admin mail subject"
 msgstr ""
 
-#: ../setting.php:131
+#: ../constant-contact-form.php:215
 msgid "Admin mail content"
 msgstr ""
 
-#: ../setting.php:133
+#: ../constant-contact-form.php:217
 msgid "Please enter admin mail content"
 msgstr ""
 
-#: ../setting.php:135
+#: ../constant-contact-form.php:219
 msgid "User email notification"
 msgstr ""
 
-#: ../setting.php:137
+#: ../constant-contact-form.php:221
 msgid "Send mail to users"
 msgstr ""
 
-#: ../setting.php:142
+#: ../constant-contact-form.php:226
 msgid "Select your option to send user mail"
 msgstr ""
 
-#: ../setting.php:144
+#: ../constant-contact-form.php:228
 msgid "Users mail subject"
 msgstr ""
 
-#: ../setting.php:146
+#: ../constant-contact-form.php:230
 msgid "Please enter user mail subject"
 msgstr ""
 
-#: ../setting.php:148
+#: ../constant-contact-form.php:232
 msgid "Users mail content"
 msgstr ""
 
-#: ../setting.php:150
+#: ../constant-contact-form.php:234
 msgid "Please enter users mail content"
 msgstr ""
 
-#: ../setting.php:153
+#: ../constant-contact-form.php:236
+msgid "Security Check (Spam Stopper)"
+msgstr ""
+
+#: ../constant-contact-form.php:237
+msgid "Home URL"
+msgstr ""
+
+#: ../constant-contact-form.php:239
+msgid ""
+"This home URL is for security check. We can submit the form only on this "
+"website. "
+msgstr ""
+
+#: ../constant-contact-form.php:242
 msgid "Update Setting"
 msgstr ""

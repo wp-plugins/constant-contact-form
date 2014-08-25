@@ -3,10 +3,10 @@ Contributors: gopiplus, www.gopiplus.com
 Donate link: http://www.gopiplus.com/work/2010/07/18/constant-contact/
 Author URI: http://www.gopiplus.com/work/2010/07/18/constant-contact/
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/constant-contact/
-Tags: constant, contact, widget, email
+Tags: constant, contact, widget, constant contact
 Requires at least: 3.4
-Tested up to: 3.9
-Stable tag: 6.2
+Tested up to: 4.0
+Stable tag: 6.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -59,9 +59,7 @@ No page refresh, because this widget using Ajax.
 	
 == Installation ==
 
-**Installation Instruction & Configuration**  
-
-[See Installation Instruction and Configuration information and Demo](http://www.gopiplus.com/work/2010/07/18/constant-contact/)	   
+[Installation Instruction and Configuration information](http://www.gopiplus.com/work/2010/07/18/constant-contact/)	   
 
 == Frequently Asked Questions ==
 
@@ -119,6 +117,11 @@ Plugin *.po file (constant-contact.po) available in the languages folder.
 
 1. Tested up to 3.9
 
+= 6.3 =
+
+1. Tested up to 4.0
+2. Form submit files has been changed from this version.
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -164,3 +167,8 @@ Plugin *.po file (constant-contact.po) available in the languages folder.
 = 6.2 =
 
 1. Tested up to 3.9
+
+= 6.3 =
+
+1. Tested up to 4.0
+2. Form submit files has been changed from this version.
