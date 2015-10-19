@@ -2,11 +2,13 @@
 /*
 Plugin Name: constant contact form
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/constant-contact/
-Description: This constant contact form plugin add the entered email address into site admin constantcontact.com account with mentioned group. and this will send thank you mail to the entered email address.
+Description: This constant contact form plugin automatically add your subscribers email address into your constantcontact.com account.
 Author: Gopi Ramasamy
-Version: 6.6
+Version: 6.7
 Author URI: http://www.gopiplus.com/work/2010/07/18/constant-contact/
 Donate link: http://www.gopiplus.com/work/2010/07/18/constant-contact/
+Text Domain: constant-contact-form
+Domain Path: /languages
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -70,10 +72,10 @@ function ccf_widget($args)
 function ccf_control() 
 {
 	echo '<p><b>';
-	_e('Constant contact form', 'constant-contact');
+	_e('Constant contact form', 'constant-contact-form');
 	echo '.</b> ';
-	_e('Check official website for more information', 'constant-contact');
-	?> <a target="_blank" href="http://www.gopiplus.com/work/2010/07/18/constant-contact/"><?php _e('click here', 'constant-contact'); ?></a></p><?php
+	_e('Check official website for more information', 'constant-contact-form');
+	?> <a target="_blank" href="http://www.gopiplus.com/work/2010/07/18/constant-contact/"><?php _e('click here', 'constant-contact-form'); ?></a></p><?php
 }
 
 function ccf_admin_options()
@@ -82,14 +84,14 @@ function ccf_admin_options()
 	<div class="wrap">
 		<div class="form-wrap">
 			<div id="icon-edit" class="icon32 icon32-posts-post"><br></div>
-			<h2><?php _e('Constant contact form', 'constant-contact'); ?></h2>
+			<h2><?php _e('Constant contact form', 'constant-contact-form'); ?></h2>
 			<p class="description">
-				<?php _e('Constant Contact is an online email marketing service that allows businesses to stay connected to their customers via email, surveys and event marketing.', 'constant-contact'); ?>
-				<?php _e('This service can send thousands of emails at one time and maintain status reports. Learn more about Constant Contact : http://www.constantcontact.com/', 'constant-contact'); ?>
+				<?php _e('Constant Contact is an online email marketing service that allows businesses to stay connected to their customers via email, surveys and event marketing.', 'constant-contact-form'); ?>
+				<?php _e('This service can send thousands of emails at one time and maintain status reports. Learn more about Constant Contact : http://www.constantcontact.com/', 'constant-contact-form'); ?>
 			</p>	
 			<p class="description">
-				<?php _e('Check official website for more information and live demo', 'constant-contact'); ?>
-				<a target="_blank" href="http://www.gopiplus.com/work/2010/07/18/constant-contact/"><?php _e('click here', 'constant-contact'); ?></a>
+				<?php _e('Check official website for more information and live demo', 'constant-contact-form'); ?>
+				<a target="_blank" href="http://www.gopiplus.com/work/2010/07/18/constant-contact/"><?php _e('click here', 'constant-contact-form'); ?></a>
 			</p>
 			<p class="description"></p>
 			<?php
@@ -148,7 +150,7 @@ function ccf_admin_options()
 				update_option('ccf_homeurl', $ccf_homeurl );
 				?>
 				<div class="updated fade">
-					<p><strong><?php _e('Details successfully updated.', 'constant-contact'); ?></strong></p>
+					<p><strong><?php _e('Details successfully updated.', 'constant-contact-form'); ?></strong></p>
 				</div>
 				<?php
 			}
@@ -156,97 +158,97 @@ function ccf_admin_options()
 			?>
 			<form name="ccf_form" method="post" action="">
 					
-				<h3><?php _e('Constant Contact Login', 'constant-contact'); ?></h3>
+				<h3><?php _e('Constant Contact Login', 'constant-contact-form'); ?></h3>
 				
-				<label for="tag-box"><?php _e('Constant contact username', 'constant-contact'); ?></label>
+				<label for="tag-box"><?php _e('Constant contact username', 'constant-contact-form'); ?></label>
 				<input name="ccf_username" type="text" value="<?php echo $ccf_username; ?>"  id="ccf_username" size="30" maxlength="100">
-				<p><?php _e('Please enter your constant contact username', 'constant-contact'); ?></p>
+				<p><?php _e('Please enter your constant contact username', 'constant-contact-form'); ?></p>
 				
-				<label for="tag-box"><?php _e('Constant contact password', 'constant-contact'); ?></label>
+				<label for="tag-box"><?php _e('Constant contact password', 'constant-contact-form'); ?></label>
 				<input name="ccf_password" type="text" value="<?php echo $ccf_password; ?>"  id="ccf_password" size="30" maxlength="100">
-				<p><?php _e('Please enter your constant contact password', 'constant-contact'); ?></p>
+				<p><?php _e('Please enter your constant contact password', 'constant-contact-form'); ?></p>
 				
-				<label for="tag-box"><?php _e('Constant contact group', 'constant-contact'); ?></label>
+				<label for="tag-box"><?php _e('Constant contact group', 'constant-contact-form'); ?></label>
 				<input name="ccf_group" type="text" value="<?php echo $ccf_group; ?>"  id="ccf_group" size="30" maxlength="100">
-				<p><?php _e('Please enter your constant contact group', 'constant-contact'); ?></p>
+				<p><?php _e('Please enter your constant contact group', 'constant-contact-form'); ?></p>
 						
-				<h3><?php _e('Widget Setting', 'constant-contact'); ?></h3>
+				<h3><?php _e('Widget Setting', 'constant-contact-form'); ?></h3>
 				
-				<label for="tag-box"><?php _e('Widget title', 'constant-contact'); ?></label>
+				<label for="tag-box"><?php _e('Widget title', 'constant-contact-form'); ?></label>
 				<input name="ccf_title" type="text" value="<?php echo $ccf_title; ?>"  id="ccf_title" size="40" maxlength="100">
-				<p><?php _e('Please enter your widget title', 'constant-contact'); ?></p>
+				<p><?php _e('Please enter your widget title', 'constant-contact-form'); ?></p>
 				
-				<label for="tag-box"><?php _e('Word within text box', 'constant-contact'); ?></label>
+				<label for="tag-box"><?php _e('Word within text box', 'constant-contact-form'); ?></label>
 				<input name="ccf_with_in_textbox" type="text" value="<?php echo $ccf_with_in_textbox; ?>"  id="ccf_with_in_textbox" size="40" maxlength="100">
-				<p><?php _e('Please enter text within text box', 'constant-contact'); ?></p>
+				<p><?php _e('Please enter text within text box', 'constant-contact-form'); ?></p>
 				
-				<label for="tag-box"><?php _e('Button caption', 'constant-contact'); ?></label>
+				<label for="tag-box"><?php _e('Button caption', 'constant-contact-form'); ?></label>
 				<input name="ccf_button" type="text" value="<?php echo $ccf_button; ?>"  id="ccf_button" size="40" maxlength="100">
-				<p><?php _e('Please enter your button caption', 'constant-contact'); ?></p>
+				<p><?php _e('Please enter your button caption', 'constant-contact-form'); ?></p>
 				
-				<label for="tag-box"><?php _e('Short description', 'constant-contact'); ?></label>
+				<label for="tag-box"><?php _e('Short description', 'constant-contact-form'); ?></label>
 				<input name="ccf_caption" type="text" value="<?php echo $ccf_caption; ?>"  id="ccf_caption" size="40" maxlength="500">
-				<p><?php _e('Please enter your widget short description', 'constant-contact'); ?></p>
+				<p><?php _e('Please enter your widget short description', 'constant-contact-form'); ?></p>
 				
-				<h3><?php _e('Email address Setting', 'constant-contact'); ?></h3>
+				<h3><?php _e('Email address Setting', 'constant-contact-form'); ?></h3>
 						
-				<label for="tag-box"><?php _e('From email address', 'constant-contact'); ?></label>
+				<label for="tag-box"><?php _e('From email address', 'constant-contact-form'); ?></label>
 				<input name="ccf_fromemail" type="text" value="<?php echo $ccf_fromemail; ?>"  id="ccf_fromemail" size="40" maxlength="150">
-				<p><?php _e('Please enter mail from email address', 'constant-contact'); ?></p>
+				<p><?php _e('Please enter mail from email address', 'constant-contact-form'); ?></p>
 				
-				<label for="tag-box"><?php _e('Admin email address', 'constant-contact'); ?></label>
+				<label for="tag-box"><?php _e('Admin email address', 'constant-contact-form'); ?></label>
 				<input name="ccf_adminemail" type="text" value="<?php echo $ccf_adminemail; ?>"  id="ccf_adminemail" size="40" maxlength="150">
-				<p><?php _e('Please enter admin email address', 'constant-contact'); ?></p>
+				<p><?php _e('Please enter admin email address', 'constant-contact-form'); ?></p>
 				
 				
-				<h3><?php _e('Admin email notification', 'constant-contact'); ?></h3>
+				<h3><?php _e('Admin email notification', 'constant-contact-form'); ?></h3>
 				
-				<label for="tag-box"><?php _e('Send mail to admin', 'constant-contact'); ?></label>
+				<label for="tag-box"><?php _e('Send mail to admin', 'constant-contact-form'); ?></label>
 				<select name="ccf_adminmail" id="ccf_adminmail">
 					<option value='YES' <?php if($ccf_usermail == 'YES') { echo "selected='selected'" ; } ?>>Yes</option>
 					<option value='NO' <?php if($ccf_usermail == 'NO') { echo "selected='selected'" ; } ?>>No</option>
 				</select>
-				<p><?php _e('Select your option to receive admin mail', 'constant-contact'); ?></p>
+				<p><?php _e('Select your option to receive admin mail', 'constant-contact-form'); ?></p>
 				
-				<label for="tag-box"><?php _e('Admin mail subject', 'constant-contact'); ?></label>
+				<label for="tag-box"><?php _e('Admin mail subject', 'constant-contact-form'); ?></label>
 				<input name="ccf_adminmail_subject" type="text" value="<?php echo $ccf_adminmail_subject; ?>"  id="ccf_adminmail_subject" size="30" maxlength="100">
-				<p><?php _e('Please enter admin mail subject', 'constant-contact'); ?></p>
+				<p><?php _e('Please enter admin mail subject', 'constant-contact-form'); ?></p>
 				
-				<label for="tag-box"><?php _e('Admin mail content', 'constant-contact'); ?></label>
+				<label for="tag-box"><?php _e('Admin mail content', 'constant-contact-form'); ?></label>
 				<textarea name="ccf_adminmail_content" rows="5" id="ccf_adminmail_content" style="width: 750px;"><?php echo $ccf_adminmail_content ?></textarea>
-				<p><?php _e('Please enter admin mail content', 'constant-contact'); ?></p>
+				<p><?php _e('Please enter admin mail content', 'constant-contact-form'); ?></p>
 				
-				<h3><?php _e('User email notification', 'constant-contact'); ?></h3>
+				<h3><?php _e('User email notification', 'constant-contact-form'); ?></h3>
 				
-				<label for="tag-box"><?php _e('Send mail to users', 'constant-contact'); ?></label>
+				<label for="tag-box"><?php _e('Send mail to users', 'constant-contact-form'); ?></label>
 				<select name="ccf_usermail" id="ccf_usermail">
 					<option value='YES' <?php if($ccf_usermail == 'YES') { echo "selected='selected'" ; } ?>>Yes</option>
 					<option value='NO' <?php if($ccf_usermail == 'NO') { echo "selected='selected'" ; } ?>>No</option>
 				</select>
-				<p><?php _e('Select your option to send user mail', 'constant-contact'); ?></p>
+				<p><?php _e('Select your option to send user mail', 'constant-contact-form'); ?></p>
 				
-				<label for="tag-box"><?php _e('Users mail subject', 'constant-contact'); ?></label>
+				<label for="tag-box"><?php _e('Users mail subject', 'constant-contact-form'); ?></label>
 				<input name="ccf_usermail_subject" type="text" value="<?php echo $ccf_usermail_subject; ?>"  id="ccf_usermail_subject" size="30" maxlength="100">
-				<p><?php _e('Please enter user mail subject', 'constant-contact'); ?></p>
+				<p><?php _e('Please enter user mail subject', 'constant-contact-form'); ?></p>
 				
-				<label for="tag-box"><?php _e('Users mail content', 'constant-contact'); ?></label>
+				<label for="tag-box"><?php _e('Users mail content', 'constant-contact-form'); ?></label>
 				<textarea name="ccf_usermail_content" rows="5" id="ccf_usermail_content" style="width: 750px;"><?php echo $ccf_usermail_content ?></textarea>
-				<p><?php _e('Please enter users mail content', 'constant-contact'); ?></p>
+				<p><?php _e('Please enter users mail content', 'constant-contact-form'); ?></p>
 				
-				<h3><?php _e('Security Check (Spam Stopper)', 'constant-contact'); ?></h3>
-				<label for="tag-width"><?php _e('Home URL', 'constant-contact'); ?></label>
+				<h3><?php _e('Security Check (Spam Stopper)', 'constant-contact-form'); ?></h3>
+				<label for="tag-width"><?php _e('Home URL', 'constant-contact-form'); ?></label>
 				<input name="ccf_homeurl" type="text" value="<?php echo $ccf_homeurl; ?>"  id="ccf_homeurl" size="70" maxlength="500">
-				<p><?php _e	('This home URL is for security check. We can submit the form only on this website. ', 'constant-contact'); ?></p>
+				<p><?php _e	('This home URL is for security check. We can submit the form only on this website. ', 'constant-contact-form'); ?></p>
 		
 				<p style="padding-top:8px;padding-bottom:8px;">
-				<input id="ccf_submit" name="ccf_submit" lang="publish" class="button-primary" value="<?php _e('Update Setting', 'constant-contact'); ?>" type="Submit" />
+				<input id="ccf_submit" name="ccf_submit" lang="publish" class="button-primary" value="<?php _e('Update Setting', 'constant-contact-form'); ?>" type="Submit" />
 				</p>
 				 <?php wp_nonce_field('ccf_form_setting'); ?>
 			</form>
 		</div>
 		<p class="description">
-			<?php _e('Check official website for more information and live demo', 'constant-contact'); ?>
-			<a target="_blank" href="http://www.gopiplus.com/work/2010/07/18/constant-contact/"><?php _e('click here', 'constant-contact'); ?></a>
+			<?php _e('Check official website for more information and live demo', 'constant-contact-form'); ?>
+			<a target="_blank" href="http://www.gopiplus.com/work/2010/07/18/constant-contact/"><?php _e('click here', 'constant-contact-form'); ?></a>
 		</p>
 	</div>
 	<?php
@@ -256,14 +258,14 @@ function ccf_plugins_loaded()
 {
 	if(function_exists('wp_register_sidebar_widget')) 
 	{
-		wp_register_sidebar_widget( __('Constant contact form', 'constant-contact'), 
-					__('Constant contact form', 'constant-contact'), 'ccf_widget');
+		wp_register_sidebar_widget( __('Constant contact form', 'constant-contact-form'), 
+					__('Constant contact form', 'constant-contact-form'), 'ccf_widget');
 	}
 	
 	if(function_exists('wp_register_widget_control')) 
 	{
-		wp_register_widget_control( __('Constant contact form', 'constant-contact'), 
-					array( __('Constant contact form', 'constant-contact'), 'widgets'), 'ccf_control');
+		wp_register_widget_control( __('Constant contact form', 'constant-contact-form'), 
+					array( __('Constant contact form', 'constant-contact-form'), 'widgets'), 'ccf_control');
 	} 
 }
 
@@ -314,8 +316,8 @@ function ccf_constant_contact_form_shortcode( $atts )
 
 function ccf_add_to_menu() 
 {
-	add_options_page( __('Constant contact form', 'constant-contact'), 
-			__('Constant contact form', 'constant-contact'), 'manage_options', 'constant-contact-form', 'ccf_admin_options' );
+	add_options_page( __('Constant contact form', 'constant-contact-form'), 
+			__('Constant contact form', 'constant-contact-form'), 'manage_options', 'constant-contact-form', 'ccf_admin_options' );
 }
 
 if (is_admin()) 
@@ -334,7 +336,7 @@ function ccf_add_javascript_files()
 
 function ccf_textdomain() 
 {
-	load_plugin_textdomain( 'constant-contact', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+	load_plugin_textdomain( 'constant-contact-form', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 }
 
 

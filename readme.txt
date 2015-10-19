@@ -5,12 +5,12 @@ Author URI: http://www.gopiplus.com/work/2010/07/18/constant-contact/
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/constant-contact/
 Tags: constant, contact, widget, constant contact
 Requires at least: 3.4
-Tested up to: 4.3
-Stable tag: 6.6
+Tested up to: 4.3.1
+Stable tag: 6.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
-This constant contact form plugin add the entered email address into site admin constantcontact.com account with mentioned group.
+This constant contact form plugin automatically add your subscribers email address into your constantcontact.com account.
 
 == Description ==
 
@@ -19,9 +19,9 @@ Check official website for live demo [http://www.gopiplus.com/work/2010/07/18/co
 *   [Live Demo](http://www.gopiplus.com/work/2010/07/18/constant-contact/)	
 *   [More info](http://www.gopiplus.com/work/2010/07/18/constant-contact/)				
 *   [Comments/Suggestion](http://www.gopiplus.com/work/2010/07/18/constant-contact/)		
-*   [About author](http://www.gopiplus.com/work/)			
+*   [About author](http://www.gopiplus.com/work/2010/07/18/constant-contact/)			
 
-This Constant Contact wordpress plug-in adds a constant contact widget signup form to your website sidebar. 
+This constant contact form plugin automatically add your subscribers email address into your constantcontact.com account.
 
 Very easy and no need any coding language knowledge to use this plug-in. Once the widget is ready, entered emails are automatically stored into your constant contact account.
 
@@ -56,7 +56,12 @@ No page refresh, because this widget using Ajax.
 *   Drag and drop the widget.		
 *   Add directly in the theme.		
 *   Short code for pages and posts.
-	
+
+**Translators**
+
+* English (en_EN) - [Gopi Ramasamy](http://www.gopiplus.com/)
+* Polish (pl_PL) - [Abdul Sattar](https://www.couponmachine.in/)
+
 == Installation ==
 
 [Installation Instruction and Configuration information](http://www.gopiplus.com/work/2010/07/18/constant-contact/)	   
@@ -134,6 +139,12 @@ Plugin *.po file (constant-contact.po) available in the languages folder.
 
 1. Tested up to 4.3
 
+= 6.7 =
+
+1. Tested up to 4.3.1
+2. Polish language file added in the language directory.
+3. Text Domain slug has been added for Language Packs.
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -196,3 +207,9 @@ Plugin *.po file (constant-contact.po) available in the languages folder.
 = 6.6 =
 
 1. Tested up to 4.3
+
+= 6.7 =
+
+1. Tested up to 4.3.1
+2. Polish language file added in the language directory.
+3. Text Domain slug has been added for Language Packs.
